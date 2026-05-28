@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braake. - Accueil</title>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/imgs/logo.png">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="bandeaug">
+            <a href="index.html" class="logo">Braake.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Chaussures</a></li>
+                <li><a href="#">Hommes</a></li>
+                <li><a href="#">Femmes</a></li>
+                <li><a href="#">Nouveautés</a></li>
+            </ul>
+        </div>
+        <div class="bandeaud">
+            <button class="panier-btn" onclick="window.location.href='panier.html'" aria-label="Panier">
+                <img src="assets/imgs/panier.png" alt="Icône du panier">
+            </button>
+
+            <button class="account-btn" onclick="window.location.href='login.html#Container'" aria-label="Mon compte">
+                <img src="assets/imgs/account.png" alt="Icône du compte">
+            </button>
+
+            <form class="search-form" action="recherche.html" method="get" role="search">
+                <input 
+                    type="text" 
+                    name="q" 
+                    placeholder="Rechercher..." 
+                    aria-label="Rechercher sur le site" 
+                    required
+                >
+                <button type="submit" class="search-btn" aria-label="Rechercher">
+                    <img src="assets/imgs/search.png" alt="Icône de recherche">
+                </button>
+            </form>
+        </div>
+    </nav>
+</header>
+    <main>
+    <section class="section1">
+        <img src="assets/imgs/SLIM-BANNER-TRAIL-W-1.jpg" alt="Bannière Braake">
+        <div class="slogan">
+            <h1>Braake. – Grip. Brake. Conquer.</h1>
+            <button>Voir maintenant</button>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="Decouvrir">
+            <h2>Découvrir</h2>
+        </div>
+
+        <div class="cases">
+            <div class="case">
+                <h2>Randonnée</h2>
+                <img src="assets/imgs/comparatif-meilleures-chaussures-de-randonnee-salomon-1024x683.webp" 
+                     alt="Chaussures de randonnée Salomon" 
+                     loading="lazy">
+            </div>
+
+            <div class="case">
+                <h2>Sneakers</h2>
+                <img src="assets/imgs/d5fdc1b7c388443c995bcc7e89141a63.thumbnail.0000000000_1600x.webp" 
+                     alt="Sneakers tendance" 
+                     loading="lazy">
+            </div>
+
+            <div class="case">
+                <h2>Outfits</h2>
+                <img src="assets/imgs/barbour-x-noah-bucket-hat-vintage-hbt-Levis-shirt-norse-projects-aros-chinos-Salomon-Advanced-XT-6-4-1440x1440.jpg" 
+                     alt="Tenue complète avec chapeau et sneakers" 
+                     loading="lazy">
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer>
+    <h3>&copy;Braake.</h3>
+</footer>
+</body>
+
+</html>
