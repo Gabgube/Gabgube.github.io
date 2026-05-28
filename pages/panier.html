@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Braake. - Panier d'achat</title>
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="stylesheet">
+	<link rel="icon" href="../assets/imgs/logo.png">
+</head>
+<body>
+	<header>
+    <nav class="navbar">
+        <div class="bandeaug">
+            <a href="index.html" class="logo">Braake.</a>
+            <ul class="nav-links">
+            	<li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Chaussures</a></li>
+                <li><a href="#">Hommes</a></li>
+                <li><a href="#">Femmes</a></li>
+                <li><a href="#">Nouveautés</a></li>
+            </ul>
+        </div>
+        <div class="bandeaud">
+            <button class="panier-btn" onclick="window.location.href='panier.html'" aria-label="Panier">
+                <img src="../assets/imgs/panier.png" alt="Icône du panier">
+            </button>
+
+            <button class="account-btn" onclick="window.location.href='login.html#Container'" aria-label="Mon compte">
+                <img src="../assets/imgs/account.png" alt="Icône du compte">
+            </button>
+
+            <form class="search-form" action="recherche.html" method="get" role="search">
+                <input 
+                    type="text" 
+                    name="q" 
+                    placeholder="Rechercher..." 
+                    aria-label="Rechercher sur le site" 
+                    required
+                >
+                <button type="submit" class="search-btn" aria-label="Rechercher">
+                    <img src="../assets/imgs/search.png" alt="Icône de recherche">
+                </button>
+            </form>
+        </div>
+    </nav>
+</header>
+	<div class="container-panier">
+
+		<!-- Partie gauche : Panier -->
+		<div class="cart-summary">
+			<h2>Votre panier (2 articles)</h2>
+
+			<div class="cart-item">
+				<img src="../assets/imgs/xt6-shadow.png" alt="XT-6 Shadow">
+				<div class="item-details">
+					<h2>XT-6 SHADOW</h2>
+					<p>Taille : 42</p>
+					<p>Couleur : Gull / Gray Violet</p>
+				</div>
+				<div class="item-price">
+					<p>180 €</p>
+					<div class="quantity">
+						<input type="number" value="1" min="1">
+					</div>
+				</div>
+			</div>
+
+			<div class="cart-item">
+				<img src="../assets/imgs/xt6-gtx.png" alt="XT-6 GTX">
+				<div class="item-details">
+					<h2>XT-6 GTX</h2>
+					<p>Taille : 41</p>
+					<p>Couleur : Black / Flame Scarlet</p>
+				</div>
+				<div class="item-price">
+					<p>200 €</p>
+					<div class="quantity">
+						<input type="number" value="1" min="1">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Partie droite : Récapitulatif -->
+		<div class="order-recap">
+			<h2>Récapitulatif de la commande</h2>
+
+			<div class="promo">
+				<input type="checkbox" id="promo">
+				<label for="promo">Vous avez un code promo ?</label>
+			</div>
+
+			<div class="price-summary">
+				<p>Sous-total : 380 €</p>
+				<h3>Total : 380 €</h3>
+			</div>
+
+			<button class="checkout">Procéder au paiement</button>
+
+			<div class="advantages">
+				<p>Retours sous 30 jours</p>
+				<p>Livraison gratuite pour les membres</p>
+				<p>Garantie de qualité de deux ans</p>
+			</div>
+		</div>
+
+	</div> <!-- .container fermé -->
+
+	<!-- Suggestions (en dehors du container) -->
+	<div class="recommendations">
+		<h2>Vous aimerez aussi</h2>
+
+		<div class="product-list">
+
+			<div class="product">
+				<img src="../assets/imgs/img1.jpg" alt="Image produit 1">
+				<div class="product-info">
+					<p>Chaussure de Randonnée - Noir</p>
+					<p>100 €</p>
+				</div>
+			</div>
+
+			<div class="product">
+				<img src="../assets/imgs/img2.jpg" alt="Image produit 2">
+				<div class="product-info">
+					<p>Chaussure de Randonnée - Marron</p>
+					<p>85 €</p>
+				</div>
+			</div>
+
+			<div class="product">
+				<img src="../assets/imgs/img3.jpg" alt="Image produit 3">
+				<div class="product-info">
+					<p>Chaussure de Course - Rouge</p>
+					<p>120 €</p>
+				</div>
+			</div>
+
+			<div class="product">
+				<img src="../assets/imgs/img4.jpg" alt="Image produit 4">
+				<div class="product-info">
+					<p>Chaussure de Trail - Grise</p>
+					<p>95 € <del>110 €</del></p>
+				</div>
+			</div>
+
+		</div> <!-- .product-list fermé -->
+	</div> <!-- .recommendations fermé -->
+    <footer>
+    <h3>&copy;Braake.</h3>
+</footer>
+</body>
+</html>
