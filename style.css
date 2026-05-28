@@ -1,0 +1,528 @@
+/* ===========================
+   🌐 RESET GLOBAL
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+/* ===========================
+   🧱 HEADER & FOOTER (COMMUNS)
+=========================== */
+header,
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 22px;
+    padding: 30px;
+}
+
+/* --- Texte & logo --- */
+h1 {
+    font-family: "BBH Sans Bogle";
+    font-size: 3rem;
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Poppins";
+}
+
+button{
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* ===========================
+   🧭 NAVIGATION
+=========================== */
+nav.navbar {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+/* --- Bandeau gauche --- */
+.bandeaug {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo {
+    font-family: "Poppins";
+    font-weight: 800;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* --- Liens de navigation --- */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+/* --- Bandeau droit --- */
+.bandeaud {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* --- Boutons / icônes --- */
+.account-btn,
+.search-btn,
+.panier-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.account-btn img,
+.search-btn img,
+.panier-btn img {
+    height: 100%;
+    width: auto;
+}
+
+/* --- Barre de recherche --- */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 50%;
+}
+
+.search-form input {
+    border: none;
+    color: black;
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+/* ===========================
+   🏠 PAGE ACCUEIL
+=========================== */
+
+/* --- Section 1 (bannière) --- */
+.section1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    height: 65vh;
+    background-size: cover;
+}
+
+.section1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slogan {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.slogan button {
+    width: 150px;
+    height: 60px;
+    margin-top: 15px;
+    background-color: transparent;
+    border: black solid 1px;
+    font-family: "BBH Sans Bogle";
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.slogan button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* --- Section 2 (Découvrir) --- */
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 20%;
+}
+
+.Decouvrir {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Decouvrir h2 {
+    font-family: "Poppins";
+    font-size: 2.2rem;
+}
+
+/* --- Grille des cases --- */
+.cases {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin-bottom: 5%;
+}
+
+.case {
+    position: relative;
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.case img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 300ms;
+}
+
+.case img:hover {
+    transform: scale(1.2);
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+.case h2 {
+    position: absolute;
+    z-index: 1;
+    padding: 15px;
+    color: white;
+    font-family: "Poppins";
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* ===========================
+   🔐 PAGE LOGIN
+=========================== */
+.container-login {
+    display: flex;
+    text-align: center;
+    height: 100%;
+}
+
+/* Partie gauche */
+.pgauche {
+    background-color: white;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Partie droite */
+.pdroite {
+    background-color: #f0f0f0;
+    width: 70%;
+    overflow: hidden;
+}
+
+.pdroite img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Formulaire */
+.container-login form {
+    background-color: white;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20%;
+}
+
+.container-login input,
+.container-login button {
+    width: 90%;
+    height: 10%;
+    border: 1px solid black;
+    margin: 5% auto;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.container-login button {
+    background-color: black;
+    color: white;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.container-login button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Section bienvenue */
+.bienvenue {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-login h1 {
+    font-family: "Poppins";
+    font-size: 5em;
+}
+
+/* Options "souvenir" */
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+    font-size: small;
+}
+
+.container-login input[type="checkbox"] {
+  width: 10%;
+  height: 100%;
+  margin: 0;
+}
+
+.container-login form a {
+    text-decoration: underline;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 5%;
+}
+
+/* ===========================
+   🛒 PAGE PANIER
+=========================== */
+.container-panier img {
+    background-color: #F0F0F2;
+}
+
+/* Grille principale */
+.container-panier {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    padding: 5%;
+}
+
+/* Bloc gauche */
+.cart-summary {
+    flex: 1.5;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.cart-item img {
+    width: 120px;
+    border-radius: 8px;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    margin-left: 15px;
+}
+
+.item-details h2 {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.item-price {
+    text-align: right;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.quantity input {
+    width: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+    height: 25px;
+}
+
+/* Bloc droit */
+.order-recap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-summary {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.checkout {
+    background: black;
+    color: white;
+    border: 1px solid transparent;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.advantages {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Suggestions */
+.recommendations {
+    background-color: #fff;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations h2 {
+    margin-bottom: 2%;
+    text-align: left;
+    font-size: 175%;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    flex: 1;
+}
+
+.product img {
+    width: 85%;
+    border-radius: 8px 8px 0 0;
+    display: block;
+    cursor: pointer;
+}
+
+.product-info {
+    padding: 8px 5px;
+    background: white;
+    border-radius: 0 0 8px 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.product-info del {
+    color: #999;
+    font-size: 12px;
+}

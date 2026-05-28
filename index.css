@@ -1,0 +1,266 @@
+/* ===========================
+   🌐 RESET GLOBAL
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+/* ===========================
+   🧱 HEADER & FOOTER
+=========================== */
+header,
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 22px;
+    padding: 30px;
+}
+
+/* ===========================
+   🔠 TEXTE & LOGO
+=========================== */
+h1 {
+    font-family: "BBH Sans Bogle";
+    font-size: 3rem;
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Poppins";
+}
+
+/* ===========================
+   🧭 NAVIGATION
+=========================== */
+nav.navbar {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+/* --- Bandeau gauche --- */
+.bandeaug {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Poppins";
+    font-weight: 800;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* --- Liens de navigation --- */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+/* --- Bandeau droit --- */
+.bandeaud {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ===========================
+   🖱️ BOUTONS / ICONES
+=========================== */
+.account-btn,
+.search-btn,
+.panier-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.account-btn img,
+.search-btn img,
+.panier-btn img {
+    height: 100%;
+    width: auto;
+}
+
+/* ===========================
+   🔍 BARRE DE RECHERCHE
+=========================== */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 50%;
+}
+
+.search-form input {
+    border: none;
+    color: black;
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+/* ===========================
+   🖼️ SECTION 1 (HERO)
+=========================== */
+.section1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    height: 65vh;
+    background-size: cover;
+}
+
+.section1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Slogan (par-dessus image) --- */
+.slogan {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.slogan > button {
+    width: 150px;
+    height: 60px;
+    margin-top: 15px;
+    background-color: transparent;
+    border: black solid;
+    border-radius: 15px;
+    font-family: "BBH Sans Bogle";
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.slogan > button:hover {
+    cursor: pointer;
+    background-color: black;
+    border: transparent solid;
+    color: white;
+}
+
+/* ===========================
+   🧩 SECTION 2 (DÉCOUVRIR)
+=========================== */
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+
+.Decouvrir {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Decouvrir > h2 {
+    font-family: "Poppins";
+    font-size: 2.2rem;
+}
+
+/* --- Grille des cases --- */
+.cases {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 95%;
+    margin-bottom: 5%;
+}
+
+.case {
+    position: relative;
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.case img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 300ms;
+    z-index: -1;
+}
+
+.case img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    filter: brightness(0.6);
+}
+
+.case > h2 {
+    position: absolute;
+    z-index: 1;
+    padding: 15px 0 0 15px;
+    color: white;
+    font-family: "Poppins";
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,287 @@
+/* ===========================
+   🌐 RESET GLOBAL
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+/* ===========================
+   🧱 HEADER & FOOTER
+=========================== */
+header,
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 22px;
+    padding: 30px;
+}
+
+/* ===========================
+   🔠 TEXTE & LOGO
+=========================== */
+h1 {
+    font-family: "BBH Sans Bogle";
+    font-size: 3rem;
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Poppins";
+}
+
+/* ===========================
+   🧭 NAVIGATION
+=========================== */
+nav.navbar {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+/* --- Bandeau gauche --- */
+.bandeaug {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Poppins";
+    font-weight: 800;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* --- Liens de navigation --- */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+/* --- Bandeau droit --- */
+.bandeaud {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ===========================
+   🖱️ BOUTONS / ICONES
+=========================== */
+.account-btn,
+.search-btn,
+.panier-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.account-btn img,
+.search-btn img,
+.panier-btn img {
+    height: 100%;
+    width: auto;
+}
+
+/* ===========================
+   🔍 BARRE DE RECHERCHE
+=========================== */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 50%;
+}
+
+.search-form input {
+    border: none;
+    color: black;
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+/*STRUCTURE PRINCIPALE*/
+.container {
+  display: flex;
+  text-align: center;
+  height: 100%;
+}
+
+/* Partie gauche : zone de connexion */
+.pgauche {
+  background-color: white;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Partie droite : image d'illustration */
+.pdroite {
+  background-color: green;
+  width: 70%;
+  overflow: hidden; /* Empêche l’image de déborder */
+}
+
+/* Image de la partie droite */
+.pdroite img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* L’image remplit sans se déformer */
+}
+
+/*FORMULAIRE DE CONNEXION*/
+.container form {
+  background-color: white;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  margin-bottom: 20%;
+}
+
+/* Champs et boutons */
+.container input, .container button {
+  width: 90%;
+  height: 10%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5% auto;
+  padding: 2%;
+}
+
+/* Boutons */
+.container button {
+  background-color: black;
+  color: white;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.container button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/*ZONE "BIENVENUE"*/
+.bienvenue {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container h1 {
+  font-family: "Poppins";
+  font-size: 5em;
+}
+
+/*OPTIONS SOUVENIR ET LIEN*/
+.remember {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+  font-size: small;
+}
+
+.container input[type="checkbox"] {
+  width: 10%;
+  height: 100%;
+  margin: 0;
+}
+
+.container form a {
+  text-decoration: underline;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.container p {
+  margin-right: 11%;
+}
+
+/*SÉPARATEUR "OU"*/
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Ajustement des marges autour du texte */
+.separator:not(:empty)::before {
+  margin-right: 5%;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 5%;
+}
